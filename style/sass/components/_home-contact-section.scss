@@ -1,0 +1,31 @@
+.contact{
+    position: relative;
+    background: #F67E7E;
+
+    &__inner{
+        @include row;
+        justify-content: space-between;
+        padding: 76px 0;
+    }
+
+    &__title{
+        @include font (normal, 700, 48px, 48px, #012F34);
+    }
+
+    &__link{
+        padding: 10px 32px;
+        @include font (normal, 600, 18px, 28px, #012F34);
+        border: 2px solid #012F34;
+        border-radius: 24px;
+    }
+
+    &::before{
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 200px;
+        height: 144px;
+        content: "";
+        background-image: url(/images__home/Contact__right.svg);
+    }
+}
