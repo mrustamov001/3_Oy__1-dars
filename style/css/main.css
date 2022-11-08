@@ -166,6 +166,18 @@ img {
   transition: all 0.6s ease;
 }
 
+.footer__social:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  color: #32b0bd;
+}
+
+.footer__social:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  color: #073439;
+}
+
 .footer__logos-description {
   font-style: normal;
   font-weight: 600;
@@ -237,8 +249,6 @@ header {
   padding: 10px 32px;
   border: 2px solid #FFFFFF;
   border-radius: 24px;
-  -webkit-transition: all 0.6s ease;
-  transition: all 0.6s ease;
 }
 
 .hero {

@@ -57,6 +57,16 @@
         color: #FFFFFF;
         transform: scale(1);
         transition: all 0.6s ease;
+
+        &:hover{
+            transform: scale(2);
+            color: #32b0bd;
+        }
+
+        &:active{
+            transform: scale(1);
+            color: #073439;
+        }
     }
 
     &__logos-description{
