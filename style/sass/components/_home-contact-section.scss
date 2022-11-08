@@ -17,6 +17,18 @@
         @include font (normal, 600, 18px, 28px, #012F34);
         border: 2px solid #012F34;
         border-radius: 24px;
+
+        &:hover{
+            color: #fff;
+            background-color: #012F34;
+        }
+
+        &:active{
+            color: #012F34;
+            border: 2px solid #012F34;
+            background-color: transparent;
+            opacity: 0.6;
+        }
     }
 
     &::before{

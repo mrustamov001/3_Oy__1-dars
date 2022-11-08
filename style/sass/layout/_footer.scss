@@ -33,12 +33,31 @@
     
         &-link{
             @include font (normal, 600, 18px, 28px, #fff);
+
+            &:hover{
+                color: #F67E7E;
+            }
+        
+            &:active{
+                color: #F67E7E;
+                opacity: 0.8;
+            }
         }
     }
 
     &__card-link{
         @include font (normal, 600, 15px, 25px, #fff);
         opacity: 0.6;
+
+        &:hover{
+            color: #F67E7E;
+            opacity: 1;
+        }
+    
+        &:active{
+            color: #F67E7E;
+            opacity: 0.8;
+        }
     }
 
     &__logos{
@@ -60,12 +79,13 @@
 
         &:hover{
             transform: scale(2);
-            color: #32b0bd;
+            color: #F67E7E;
         }
 
         &:active{
-            transform: scale(1);
-            color: #073439;
+            transform: scale(0.5);
+            color: #F67E7E;
+            opacity: 0.8;
         }
     }
 

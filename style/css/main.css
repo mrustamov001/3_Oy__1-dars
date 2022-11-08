@@ -136,6 +136,15 @@ img {
   color: #fff;
 }
 
+.footer__item-link:hover {
+  color: #F67E7E;
+}
+
+.footer__item-link:active {
+  color: #F67E7E;
+  opacity: 0.8;
+}
+
 .footer__card-link {
   font-style: normal;
   font-weight: 600;
@@ -143,6 +152,16 @@ img {
   line-height: 25px;
   color: #fff;
   opacity: 0.6;
+}
+
+.footer__card-link:hover {
+  color: #F67E7E;
+  opacity: 1;
+}
+
+.footer__card-link:active {
+  color: #F67E7E;
+  opacity: 0.8;
 }
 
 .footer__logos {
@@ -169,13 +188,14 @@ img {
 .footer__social:hover {
   -webkit-transform: scale(2);
           transform: scale(2);
-  color: #32b0bd;
+  color: #F67E7E;
 }
 
 .footer__social:active {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  color: #073439;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  color: #F67E7E;
+  opacity: 0.8;
 }
 
 .footer__logos-description {
@@ -240,6 +260,15 @@ header {
   color: #fff;
 }
 
+.nav__item-link:hover {
+  color: #F67E7E;
+}
+
+.nav__item-link:active {
+  color: #F67E7E;
+  opacity: 0.8;
+}
+
 .nav__link {
   font-style: normal;
   font-weight: 600;
@@ -249,6 +278,20 @@ header {
   padding: 10px 32px;
   border: 2px solid #FFFFFF;
   border-radius: 24px;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.nav__link:hover {
+  color: #002529;
+  background-color: #fff;
+}
+
+.nav__link:active {
+  color: #fff;
+  border: 2px solid #FFFFFF;
+  background-color: transparent;
+  opacity: 0.6;
 }
 
 .hero {
@@ -563,6 +606,18 @@ header {
   color: #012F34;
   border: 2px solid #012F34;
   border-radius: 24px;
+}
+
+.contact__link:hover {
+  color: #fff;
+  background-color: #012F34;
+}
+
+.contact__link:active {
+  color: #012F34;
+  border: 2px solid #012F34;
+  background-color: transparent;
+  opacity: 0.6;
 }
 
 .contact::before {
