@@ -574,4 +574,280 @@ header {
   content: "";
   background-image: url(/images__home/Contact__right.svg);
 }
+
+.person {
+  position: relative;
+  background: #004047;
+}
+
+.person::before {
+  position: absolute;
+  display: block;
+  width: 100px;
+  height: 200px;
+  content: "";
+  background-image: url(/images__about/About__about-left.svg);
+}
+
+.person::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: 147px;
+  height: 100px;
+  content: "";
+  background-image: url(/images__about/About__about-right.svg);
+}
+
+.person__inner {
+  padding-top: 140px;
+  padding-bottom: 168px;
+}
+
+.person__title {
+  margin: 0 auto;
+  margin-bottom: 64px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: #fff;
+}
+
+.person__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.person__item {
+  position: relative;
+  width: 350px;
+  margin-right: 30px;
+  margin-bottom: 76px;
+  padding-top: 32px;
+  padding-bottom: 56px;
+  text-align: center;
+  background: #012F34;
+}
+
+.person__item:nth-child(3) {
+  margin-right: 0;
+}
+
+.person__item:nth-child(6) {
+  margin-right: 0;
+}
+
+.person__item-btn {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -28px;
+  display: block;
+  width: 56px;
+  height: 56px;
+  margin: 0 auto;
+  background: #F67E7E;
+  border-radius: 50%;
+  border: transparent;
+}
+
+.person__item-img {
+  margin-bottom: 16px;
+}
+
+.person__item-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #79C8C7;
+}
+
+.person__item-text {
+  font-family: 'Livvic';
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.person__item-description {
+  display: none;
+}
+
+.person__logo-link {
+  display: none;
+}
+
+.person__btn {
+  display: none;
+}
+
+.item-btn {
+  position: absolute;
+}
+
+.item-btn__line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: block;
+  width: 16px;
+  height: 4px;
+  background-color: #012F34;
+  content: "";
+}
+
+.item-btn__line::after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: block;
+  width: 16px;
+  height: 4px;
+  background-color: #012F34;
+  content: "";
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.item-btn {
+  display: block;
+}
+
+.item-btn--opened::before, .item-btn--opened::after {
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+}
+
+.item-btn--opened::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.item-btn--opened::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.abouthero {
+  position: relative;
+  background: #014E56;
+}
+
+.abouthero::before {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: 100px;
+  height: 200px;
+  content: "";
+  background-image: url(/images__about/About__hero-right.svg);
+}
+
+.abouthero__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 70px;
+  padding-bottom: 120px;
+}
+
+.abouthero__title {
+  width: 350px;
+  margin-right: 30px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 100px;
+  color: #fff;
+}
+
+.abouthero__description {
+  position: relative;
+  width: 730px;
+  margin-top: 40px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+}
+
+.abouthero__description::before {
+  position: absolute;
+  top: -40px;
+  display: block;
+  width: 50px;
+  height: 4px;
+  content: "";
+  background: #F67E7E;
+}
+
+.aboutservices {
+  position: relative;
+  background: #012F34;
+}
+
+.aboutservices::before {
+  position: absolute;
+  display: block;
+  width: 200px;
+  height: 200px;
+  content: "";
+  background-image: url(/images__about/About__Services-left.svg);
+}
+
+.aboutservices__inner {
+  padding-top: 140px;
+  padding-bottom: 150px;
+}
+
+.aboutservices__title {
+  width: 920px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  color: #fff;
+}
+
+.aboutservices__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutservices__item {
+  margin-right: 79px;
+}
+
+.aboutservices__item:last-child {
+  margin-right: 0;
+}
 /*# sourceMappingURL=main.css.map */

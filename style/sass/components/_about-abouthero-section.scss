@@ -1,0 +1,47 @@
+.abouthero{
+    position: relative;
+    background: #014E56;
+
+    &::before{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        display: block;
+        width: 100px;
+        height: 200px;
+        content: "";
+        background-image: url(/images__about/About__hero-right.svg);
+    }
+
+    &__inner{
+        @include row;
+        align-items: flex-start;
+        padding: {
+            top: 70px;
+            bottom: 120px;
+        };
+    }
+
+    &__title{
+        width: 350px;
+        margin-right: 30px;
+        @include font (normal, 700, 64px, 100px, #fff);
+    }
+
+    &__description{
+        position: relative;
+        width: 730px;
+        margin-top: 40px;
+        @include font (normal, 600, 18px, 28px, #fff);
+
+        &::before{
+            position: absolute;
+            top: -40px;
+            display: block;
+            width: 50px;
+            height: 4px;
+            content: "";
+            background: #F67E7E;
+        }
+    }
+}
