@@ -1,0 +1,39 @@
+.aboutservices{
+    position: relative;
+    background: #012F34;
+
+    &::before{
+        position: absolute;
+        display: block;
+        width: 200px;
+        height: 200px;
+        content: "";
+        background-image: url(/images__about/About__Services-left.svg);
+    }
+
+    &__inner{
+        padding: {
+            top: 140px;
+            bottom: 150px;
+        };
+    }
+
+    &__title{
+        width: 920px;
+        margin: 0 auto;
+        margin-bottom: 70px;
+        text-align: center;
+        @include font (normal, 700, 48px, 48px, #fff);
+    }
+
+    &__list{
+        @include row;
+    }
+
+    &__item{
+        margin-right: 79px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
